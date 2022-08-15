@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-        <div class="container">
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center dark:bg-slate-900 bg-primary">
+        <div class=" container">
             <div class="relative flex items-center justify-between">
                 <div class="px-5">
 
@@ -27,32 +27,36 @@
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
                     <nav id="nav-menu"
-                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
+                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg dark:bg-slate-900 bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none  lg:bg-transparent lg:shadow-none">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="index.html"
-                                    class="mx-8 flex py-2 text-sm text-white group-hover:text-primary">Home</a>
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">Home</a>
                             </li>
                             <li class="group">
                                 <a href="product.html"
-                                    class="mx-8 flex py-2 text-sm text-white group-hover:text-primary">Product</a>
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">Product</a>
                             </li>
-                            <li class="portfolio">
+                            <li class="group">
                                 <a href="portfolio.html"
-                                    class="mx-8 flex py-2 text-sm text-white group-hover:text-primary">Portfolio</a>
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">Portfolio</a>
                             </li>
-                            <li class="contact">
-                                <a href="#contact"
-                                    class="mx-8 flex py-2 text-sm text-white group-hover:text-primary">Contact</a>
+                            <li class="group">
+                                <a href="contact.html"
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">Contact</a>
                             </li>
-                            <li class="about">
+                            <li class="group">
                                 <a href="about.html"
-                                    class="mx-8 flex py-2 text-sm text-white group-hover:text-primary">About
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">About
                                     Us</a>
+                            </li>
+                            <li class="group">
+                                <a href="detail_produk.html"
+                                    class="mx-8 flex py-2 text-sm text-text1 dark:text-white group-hover:text-primary">detail</a>
                             </li>
                             <li class="flex items-center pl-8">
                                 <div class="flex ">
-                                    <span class="text-sm text-slate-500 mr-2">Light</span>
+                                    <span class="text-sm text-text1 dark:text-slate-500 mr-2">Light</span>
                                     <input type="checkbox" id="dark-toggle" class="hidden">
                                     <label for="dark-toggle">
                                         <div
@@ -62,7 +66,7 @@
                                             </div>
                                         </div>
                                     </label>
-                                    <span class="text-sm text-slate-500 ml-2">Dark</span>
+                                    <span class="text-sm dark:text-white text-slate-500 ml-2">Dark</span>
                                 </div>
                             </li>
 
@@ -75,29 +79,29 @@
     <!-- COROSEL -->
     <section id="home" class=" dark:bg-slate-900 bg-primary 
      pt-36 h-screen">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-full ">
-                    <h1 data-aos="zoom-in-up" data-aos-delay="200" class=" mb-6 text-xl font-extrabold text-white
+        <!-- <div class="container"> -->
+        <div class="flex-wrap flex ">
+            <div class="w-full self-center px-5 mx-5 lg:w-full ">
+                <h1 data-aos="zoom-in-up" data-aos-delay="200" class=" mb-6 text-xl font-extrabold text-white
                     md:text-4xl lg:text-4xl lg:w-1/2">
-                        Membantu Menemukan Properti Yang Diinginkan
-                    </h1>
-                    <h2 data-aos="zoom-in-up" data-aos-delay="500"
-                        class="dark:text-primary mb-16 text-sm font-light text-white lg:text-2xl lg:w-1/2"> <span
-                            class="font-semibold dark:text-primary text-white">OK Properti</span> hadir untuk membantu
-                        menemukan.
-                        properti yang anda inginkan
-                    </h2>
+                    Membantu Menemukan Properti Yang Diinginkan
+                </h1>
+                <h2 data-aos="zoom-in-up" data-aos-delay="500"
+                    class="dark:text-primary mb-16 text-sm font-light text-white lg:text-2xl lg:w-1/2"> <span
+                        class="font-semibold dark:text-primary text-white">OK Properti</span> hadir untuk membantu
+                    menemukan
+                    properti yang anda inginkan
+                </h2>
 
-                    <a href="#searchbar" data-aos="fade-up" data-aos-delay="500"
-                        class="my-6 rounded-[5px] dark:bg-primary dark:text-white bg-white py-3 z-20 px-8 text-sm font-semibold text-primary transition duration-300 ease-in-out hover:opacity-80 dark:hover:shadow-lg hover:shadow-lg ">Temukan
-                        Properti
-                    </a>
+                <a href="#searchbar" data-aos="fade-up" data-aos-delay="500"
+                    class="my-6 rounded-[5px] dark:bg-primary dark:text-white bg-white py-3 z-20 px-8 text-sm font-semibold text-primary transition duration-300 ease-in-out hover:opacity-80 dark:hover:shadow-lg hover:shadow-lg ">Temukan
+                    Properti
+                </a>
 
-                </div>
+            </div>
 
-                <!-- KANAN -->
-                <!-- <span class="w-full self-start px-4  ">
+            <!-- KANAN -->
+            <!-- <span class="w-full self-start px-4  ">
                     <div class="relative lg:absolute -left-0 mt-5  -bottom-4 lg:mt-9 ">
                         <img height="300" width="300" src="dist/images/corak1.svg" alt="Corak"
                             class="  mx-auto max-w-full " />
@@ -109,14 +113,14 @@
                             class="  mx-auto max-w-full " />
                     </div>
                 </span> -->
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="absolute lg:-right-[310px] mt-5 z-10 -bottom-4 lg:mt-9 ">
-                        <img data-aos="fade-up-left" data-aos-delay="300" height="478" width="1204"
-                            src="dist/images/rumah.svg" alt="DenySurya" class="  mx-auto max-w-full " />
-                    </div>
+            <div class="w-full self-end px-4 lg:w-1/2">
+                <div class="absolute lg:-right-0 mt-5 z-10 -bottom-4 lg:mt-9 ">
+                    <img data-aos="fade-up-left" data-aos-delay="300" height="378" width="904"
+                        src="dist/images/rumah2.svg" alt="DenySurya" class="  mx-auto max-w-full " />
                 </div>
-
             </div>
+
+            <!-- </div> -->
         </div>
     </section>
     <!-- END COROSEL -->
@@ -145,9 +149,10 @@
                 class="mb-12 p-4 md:w-1/3 ">
                 <div
                     class=" mx-auto overflow-hidden rounded-md shadow-md transition duration-500 bg-white group hover:bg-primary  hover:shadow-lg ">
-                    <img class="mx-auto mt-6" src="dist/images/properti baru.svg" alt="poroperti baru" />
+                    <img height="75" width="75" class="mx-auto mt-6" src="dist/images/newhouse.png"
+                        alt="poroperti baru" />
 
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-text1 group-hover:text-white text-center ">
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-primary group-hover:text-white text-center ">
                         Properti Baru
                     </h3>
 
@@ -161,14 +166,15 @@
             <div data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300"
                 class="mb-12 p-4 md:w-1/3 ">
                 <div
-                    class=" mx-auto overflow-hidden rounded-md shadow-md transition duration-500 bg-white hover:bg-primary hover:shadow-lg hover:text-white">
-                    <img class="mx-auto mt-6 " src="dist/images/properti baru.svg" alt="poroperti baru" />
+                    class=" mx-auto overflow-hidden rounded-md shadow-md transition duration-500 bg-white group hover:bg-primary  hover:shadow-lg ">
+                    <img height="75" width="75" class="mx-auto mt-6" src="dist/images/salehouse.png"
+                        alt="Jual Poroperti" />
 
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-text1 text-center ">
-                        Properti Baru
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-primary group-hover:text-white text-center ">
+                        Jual Properti
                     </h3>
 
-                    <p class="text-base font-medium text-text2 text-center mb-10 ml-5 mr-5 ">
+                    <p class=" text-base font-medium text-text2 text-center mb-10 ml-5 group-hover:text-white mr-5 ">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
                         veniam nisi, iure facilis odit vel.
                     </p>
@@ -178,19 +184,21 @@
             <div data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300"
                 class="mb-12 p-4 md:w-1/3 ">
                 <div
-                    class=" mx-auto overflow-hidden rounded-md shadow-md transition duration-500 bg-white hover:bg-primary hover:shadow-lg hover:text-white">
-                    <img class="mx-auto mt-6 " src="dist/images/properti baru.svg" alt="poroperti baru" />
+                    class=" mx-auto overflow-hidden rounded-md shadow-md transition duration-500 bg-white group hover:bg-primary  hover:shadow-lg ">
+                    <img height="75" width="75" class="mx-auto mt-6" src="dist/images/renthouse.png"
+                        alt="Sewa Properti" />
 
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-text1 text-center ">
-                        Properti Baru
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-primary group-hover:text-white text-center ">
+                        Sewa Properti
                     </h3>
 
-                    <p class="text-base font-medium text-text2 text-center mb-10 ml-5 mr-5 ">
+                    <p class=" text-base font-medium text-text2 text-center mb-10 ml-5 group-hover:text-white mr-5 ">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
                         veniam nisi, iure facilis odit vel.
                     </p>
                 </div>
             </div>
+
 
 
         </div>
@@ -208,30 +216,47 @@
                     </h1>
                     <p data-aos="fade-right" data-aos-anchor-placement="center-bottom"
                         class="dark:text-primary mb-5 max-w-full text-sm lg:text-center lg:text-2xl font-extralight text-white text-center ">
-                        Ok Properti hadir untuk memenuhi kebutuhan anda
+                        Temukan properti yang anda impikan
                     </p>
 
                 </div>
-                <!-- search -->
-                <div class="relative mx-auto">
-                    <div class="absolute  pointer-events-auto ">
-                        <svg class="absolute text-slate-400 h-20 w-150" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <input type="text" placeholder="Search" class="...">
-                </div>
-                <div class="w-full self-center -px-20 ">
-                    <div class="relative  lg:-right-0 mt-5   lg:-bottom-0 lg:mt-9 ">
-                        <img data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300"
-                            height="400" width="2500" src="dist/images/kota2.png" alt="DenySurya"
-                            class="  mx-auto max-w-full " />
+            </div>
+            <div class="flex w-full items-center  px-2 md:px-20   ">
+                <button
+                    class=" px-3 lg:px-6 text-xs lg:text-base py-1.5 text-gray-900 bg-white rounded-tl-[5px] border-l shadow-lg">
+                    Dijual
+                </button>
+                <button
+                    class="px-3 lg:px-5 text-xs lg:text-base   -ml-0.5 py-1.5 text-gray-900 bg-white text-opacity-50 bg-opacity-50 rounded-tr-[5px] border-l shadow-lg">
+                    Disewa
+                </button>
+            </div>
+            <!-- search -->
+            <div class="flex  justify-start items-center  relative ">
+
+                <div class="flex w-full items-center  px-2 md:px-20 justify-center  ">
+                    <div class="flex w-full  shadow-lg">
+                        <input type="text" class="px-10 py-2 lg:py-4 w-full text-sm rounded-bl-[5px]"
+                            placeholder="Cari Berdasarkan Area, Nama Properti, Penyedia... ">
+                        <button
+                            class="px-5 lg:px-10 text-white bg-primary rounded-tr-[5px] rounded-br-[5px] hover:shadow-lg hover:bg-primary2 shadow-lg">
+                            Cari
+                        </button>
                     </div>
                 </div>
 
             </div>
+
+
+            <div class="w-full self-center -px-20 ">
+                <div class="relative  lg:-right-0 mt-5   lg:-bottom-0 lg:mt-9 ">
+                    <img data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300"
+                        height="400" width="2500" src="dist/images/kota2.png" alt="DenySurya"
+                        class="  mx-auto max-w-full " />
+                </div>
+            </div>
+
+        </div>
         </div>
     </section>
     <!-- END SEARCH BAR -->
@@ -245,7 +270,7 @@
                         KESULITAN MENCARI PROPERTI?
                     </h1>
                     <hr data-aos="fade-right" data-aos-anchor-placement="center-center" data-aos-delay="500"
-                        class="my-5 border-primary  dark:gray-700 w-64 md-w-1/3">
+                        class="my-5 border-primary border-t-4 dark:gray-700 w-64 md-w-1/3">
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3  gap-4 md:gap-6">
@@ -1059,13 +1084,15 @@
     <!-- KENAPA OK PROPERTI -->
     <section id="mengapa" class="dark:bg-slate-800 bg-slate-100 pt-36 pb-16">
         <div class="container">
-            <div class="w-full self-start px-4 ">
+            <div class="w-full  px-4   ">
                 <h1 data-aos="fade-left" data-aos-anchor-placement="center-center" data-aos-delay="300"
                     class="mb-2 text-xl dark:text-white font-bold uppercase text-text1 text-right lg:text-3xl md:text-md lg:text-right">
                     KENAPA HARUS MEMILIH OK PROPERTI?
                 </h1>
+
                 <hr data-aos="fade-left" data-aos-anchor-placement="center-center" data-aos-delay="500"
-                    class="my-5 border-primary  text-right dark:gray-700 w-64 md-w-1/3">
+                    class="absolute self-end py-2 border-t-4 border-primary dark:gray-700 w-64 ">
+
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3  gap-4 md:gap-6">
                 <!-- text -->
@@ -1082,8 +1109,8 @@
                 </div>
                 <!-- icon -->
                 <div data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300"
-                    class="h-15  aspect-video">
-                    <svg class="animated" id="freepik_stories-building-safety" xmlns="http://www.w3.org/2000/svg"
+                    class="h-15   aspect-video">
+                    <svg class="animated mt-2" id="freepik_stories-building-safety" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 750 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         xmlns:svgjs="http://svgjs.com/svgjs">
                         <style>
